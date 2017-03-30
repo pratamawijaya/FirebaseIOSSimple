@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78AC5F56ADBAB938099BCBC0 /* Pods_CobaFirebaseChatIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BCAA648CE968FA254124E4 /* Pods_CobaFirebaseChatIOS.framework */; };
 		BC32AFFA1E8CC8DC00700DC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32AFF91E8CC8DC00700DC4 /* AppDelegate.swift */; };
 		BC32AFFC1E8CC8DC00700DC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32AFFB1E8CC8DC00700DC4 /* ViewController.swift */; };
 		BC32AFFF1E8CC8DC00700DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC32AFFD1E8CC8DC00700DC4 /* Main.storyboard */; };
 		BC32B0011E8CC8DC00700DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC32B0001E8CC8DC00700DC4 /* Assets.xcassets */; };
 		BC32B0041E8CC8DC00700DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC32B0021E8CC8DC00700DC4 /* LaunchScreen.storyboard */; };
+		BC32B00C1E8CCA5D00700DC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC32B00B1E8CCA5D00700DC4 /* GoogleService-Info.plist */; };
+		BC32B00E1E8CCC8E00700DC4 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC32B00D1E8CCC8E00700DC4 /* ComposeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20BCAA648CE968FA254124E4 /* Pods_CobaFirebaseChatIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CobaFirebaseChatIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900A1FA887F210E1A66C6418 /* Pods-CobaFirebaseChatIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobaFirebaseChatIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CobaFirebaseChatIOS/Pods-CobaFirebaseChatIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BC32AFF61E8CC8DC00700DC4 /* CobaFirebaseChatIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CobaFirebaseChatIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC32AFF91E8CC8DC00700DC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC32AFFB1E8CC8DC00700DC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		BC32B0001E8CC8DC00700DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC32B0031E8CC8DC00700DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC32B0051E8CC8DC00700DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC32B00B1E8CCA5D00700DC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC32B00D1E8CCC8E00700DC4 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		E2091015B13D73A854ADB2DA /* Pods-CobaFirebaseChatIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobaFirebaseChatIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-CobaFirebaseChatIOS/Pods-CobaFirebaseChatIOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78AC5F56ADBAB938099BCBC0 /* Pods_CobaFirebaseChatIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EF67E89B248519F89869D75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20BCAA648CE968FA254124E4 /* Pods_CobaFirebaseChatIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC32AFED1E8CC8DC00700DC4 = {
 			isa = PBXGroup;
 			children = (
 				BC32AFF81E8CC8DC00700DC4 /* CobaFirebaseChatIOS */,
 				BC32AFF71E8CC8DC00700DC4 /* Products */,
+				FC5935A25AB362761C3ED060 /* Pods */,
+				2EF67E89B248519F89869D75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +75,23 @@
 			children = (
 				BC32AFF91E8CC8DC00700DC4 /* AppDelegate.swift */,
 				BC32AFFB1E8CC8DC00700DC4 /* ViewController.swift */,
+				BC32B00D1E8CCC8E00700DC4 /* ComposeViewController.swift */,
 				BC32AFFD1E8CC8DC00700DC4 /* Main.storyboard */,
 				BC32B0001E8CC8DC00700DC4 /* Assets.xcassets */,
 				BC32B0021E8CC8DC00700DC4 /* LaunchScreen.storyboard */,
 				BC32B0051E8CC8DC00700DC4 /* Info.plist */,
+				BC32B00B1E8CCA5D00700DC4 /* GoogleService-Info.plist */,
 			);
 			path = CobaFirebaseChatIOS;
+			sourceTree = "<group>";
+		};
+		FC5935A25AB362761C3ED060 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				900A1FA887F210E1A66C6418 /* Pods-CobaFirebaseChatIOS.debug.xcconfig */,
+				E2091015B13D73A854ADB2DA /* Pods-CobaFirebaseChatIOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC32B0081E8CC8DC00700DC4 /* Build configuration list for PBXNativeTarget "CobaFirebaseChatIOS" */;
 			buildPhases = (
+				B36C57B4436096C8076B2A04 /* [CP] Check Pods Manifest.lock */,
 				BC32AFF21E8CC8DC00700DC4 /* Sources */,
 				BC32AFF31E8CC8DC00700DC4 /* Frameworks */,
 				BC32AFF41E8CC8DC00700DC4 /* Resources */,
+				714CCACDBA1074C936A7E935 /* [CP] Embed Pods Frameworks */,
+				3CE9C4E63FC90EA281A8BBF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC32B0041E8CC8DC00700DC4 /* LaunchScreen.storyboard in Resources */,
+				BC32B00C1E8CCA5D00700DC4 /* GoogleService-Info.plist in Resources */,
 				BC32B0011E8CC8DC00700DC4 /* Assets.xcassets in Resources */,
 				BC32AFFF1E8CC8DC00700DC4 /* Main.storyboard in Resources */,
 			);
@@ -132,11 +166,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CE9C4E63FC90EA281A8BBF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CobaFirebaseChatIOS/Pods-CobaFirebaseChatIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		714CCACDBA1074C936A7E935 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CobaFirebaseChatIOS/Pods-CobaFirebaseChatIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B36C57B4436096C8076B2A04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC32AFF21E8CC8DC00700DC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC32B00E1E8CCC8E00700DC4 /* ComposeViewController.swift in Sources */,
 				BC32AFFC1E8CC8DC00700DC4 /* ViewController.swift in Sources */,
 				BC32AFFA1E8CC8DC00700DC4 /* AppDelegate.swift in Sources */,
 			);
@@ -257,6 +340,7 @@
 		};
 		BC32B0091E8CC8DC00700DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900A1FA887F210E1A66C6418 /* Pods-CobaFirebaseChatIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7U347NZRJ7;
@@ -270,6 +354,7 @@
 		};
 		BC32B00A1E8CC8DC00700DC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2091015B13D73A854ADB2DA /* Pods-CobaFirebaseChatIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7U347NZRJ7;
@@ -300,6 +385,7 @@
 				BC32B00A1E8CC8DC00700DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
